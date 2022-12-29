@@ -1,0 +1,15 @@
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\bin\Debug\net7.0\Hello_WorldApp.exe
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\bin\Debug\net7.0\Hello_WorldApp.deps.json
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\bin\Debug\net7.0\Hello_WorldApp.runtimeconfig.json
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\bin\Debug\net7.0\Hello_WorldApp.dll
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\bin\Debug\net7.0\Hello_WorldApp.pdb
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.csproj.AssemblyReference.cache
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.AssemblyInfoInputs.cache
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.AssemblyInfo.cs
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.csproj.CoreCompileInputs.cache
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.dll
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\refint\Hello_WorldApp.dll
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.pdb
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\Hello_WorldApp.genruntimeconfig.cache
+D:\CHAITANYA CDAC\PRACTICE WORK\.NET WORK\.NET-PRACTICE\DAY 01\Hello_WorldApp\obj\Debug\net7.0\ref\Hello_WorldApp.dll

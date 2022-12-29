@@ -1,0 +1,10 @@
+dotnet new console -o Hello_WorldApp  --->to create folder 
+
+dotnet build       ----->(bin folder is created )
+
+cd .\bin\           ------->to go to bin
+
+dotnet .\Debug\net7.0\Hello_WorldApp.dll ------> to run the code.
+
+Every time you make changes , you need to come to folder where Program.cs file present and  type dotnet build
+then go to bin where dll file located and extecute  dll file.
