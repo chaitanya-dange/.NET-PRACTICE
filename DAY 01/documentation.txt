@@ -1,5 +1,7 @@
 dotnet new console -o Hello_WorldApp  --->to create folder 
 
+Enter in created folder.
+
 dotnet build       ----->(bin folder is created )
 
 cd .\bin\           ------->to go to bin
@@ -8,3 +10,26 @@ dotnet .\Debug\net7.0\Hello_WorldApp.dll ------> to run the code.
 
 Every time you make changes , you need to come to folder where Program.cs file present and  type dotnet build
 then go to bin where dll file located and extecute  dll file.
+
+_______________________________________________________________
+
+//Variables are declared using types
+//CTS :Common Type System
+
+//Value types:
+            //primitive data types
+            //int, float, double, bool, struct
+            //enum
+            //char
+//Reference types
+            //class
+            //interface
+            //delegate
+            //event
+
+//Collection Framework
+            // namespaces
+            // System.Collections.Generic
+//bool status=false;
+//Boolean flag=true;
+//annonymous type
