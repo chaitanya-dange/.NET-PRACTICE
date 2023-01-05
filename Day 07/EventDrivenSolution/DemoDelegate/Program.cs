@@ -1,6 +1,9 @@
 ﻿using Banking;
 using EGovernance;
+using System.Threading;
 
+Thread priThread= Thread.CurrentThread;
+Console.WriteLine(priThread.ManagedThreadId);
 
 CentralGov govn=new CentralGov();
 TaxOperation itOpert=new TaxOperation(govn.DeductIncomeTax);
