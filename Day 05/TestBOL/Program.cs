@@ -38,6 +38,17 @@ Entity et5= new Entity("delevel","99000000","Akurdi",1005);
 
             File.WriteAllText(filename,productJson);
 
+            //deserialize the data...
+
+            string flname=@"D:\CHAITANYA CDAC\2.PRACTICE WORK\.NET WORK\.NET-PRACTICE\Day 05\chait.json";
+
+            string  jsonString = File.ReadAllText(flname);
+
+            List<Entity> jsonent=JsonSerializer.Deserialize< List<Entity>>(jsonString);
+
+            foreach(Entity et in jsonent){
+                Console.WriteLine(et.Name+ et.Tel+et.Designation+et.MgrId);
+            }
 
 
         }catch(Exception exp){

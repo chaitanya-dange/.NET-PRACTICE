@@ -5,3 +5,5 @@ dotnet sln add .\tflstore\tflstore.csproj
 in view, go home and then to index.cshtml and then do write code..
 
 to store image , keep images in wwwroot ,make image folder and store imaga ..
+
+adding login page in  Controller --> HomeController  and make method----- to call localhost/home/login coz it is inside home folder.

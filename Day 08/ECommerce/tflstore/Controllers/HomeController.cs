@@ -18,6 +18,19 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult login()
+    {
+        return View();
+    }
+
+    public IActionResult Validate(string email,string password )
+    {
+        if(email=="c@gmail.com"&& password=="weed"){
+            return Redirect("/home/index");
+        }
+        return View();
+    }
+    
     public IActionResult Privacy()
     {
         return View();
