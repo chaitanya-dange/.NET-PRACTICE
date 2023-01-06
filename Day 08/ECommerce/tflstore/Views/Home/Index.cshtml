@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To HomePage</h1>
+    <ol>
+        <li>Flower</li>
+        <li>Fruits</li>
+        <li>Vegetables</li>
+    </ol>
+
+    @{
+         List<string>flower =new List<string>();
+                flower.Add("gerbera");
+                flower.Add("lily");
+                flower.Add("marigold");
+                flower.Add("sunflower");
+           
+    }
+    
+
+                @foreach(string flwr in flower){
+                    <li>@flwr</li>
+                }
+    
+        
+   
+</div>
+
+
+@* In Razor views, the @ symbol is used to indicate the start of a code block. It is used to embed server-side code in the HTML of a view.
+
+In the code you provided, the @ symbol is used in several places:
+
+At the top of the view, it is used to start a code block where the value of the ViewData dictionary is set.
+In the C# code block in the middle of the view, it is used to start each line of code.
+In the foreach loop, it is used to start the loop and to output the value of the flwr variable as an HTML list item.
+The @ symbol is used to switch the view parser between HTML and C#. Without it, the parser would treat the C# code as HTML and would display the code as a string on the page. *@

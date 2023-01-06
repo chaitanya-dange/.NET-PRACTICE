@@ -1,0 +1,7 @@
+dotnet new mvc -o <folder name>
+dotnet sln add .\tflstore\tflstore.csproj
+
+
+in view, go home and then to index.cshtml and then do write code..
+
+to store image , keep images in wwwroot ,make image folder and store imaga ..
