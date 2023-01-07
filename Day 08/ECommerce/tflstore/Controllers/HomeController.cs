@@ -18,16 +18,33 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult login()
+    public IActionResult gallery()
     {
         return View();
     }
 
-    public IActionResult Validate(string email,string password )
+      public IActionResult login()
     {
-        if(email=="c@gmail.com"&& password=="weed"){
-            return Redirect("/home/index");
-        }
+        return View();
+    }
+
+       public IActionResult Welcome()
+    {
+        return View();
+    }
+
+    public IActionResult Validate(string el,string pass )
+    {
+
+    //Note  , the input  name   in login and the parameter in validation name must match exactly...
+    // make Welcome method in controller...
+
+         if(el =="c@gmail.com" && 
+           pass=="seed"){
+             
+            return Redirect("/home/Welcome");
+           }
+
         return View();
     }
     
