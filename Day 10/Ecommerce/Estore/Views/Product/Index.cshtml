@@ -1,0 +1,27 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Index Page";
+}
+
+<div >
+   <h2>Product Catalog...........</h2>
+
+   @{
+    List<Product> allProducts= (List<Product>)ViewData["product"];
+        <ol>
+            @foreach (Product item in allProducts)
+            {
+                <a href="/Product/Index/@item.id">@item.id</a>
+            }
+        </ol>
+   }
+</div>
+
+
+@* NOTE A :In the code you provided, the this.ViewData property is used to store a list of products in the view data dictionary.
+
+The view data dictionary is an object that allows you to pass data from a controller action to a view template.
+ It is a key-value store that is available to the view template during rendering, and can be accessed using the ViewData property of the view.
+
+In the code you provided, the ViewData property is accessed using the this keyword, which refers to the current instance of the controller. 
+The ViewData property is then used to store the allProducts list in a key-value pair, with the key "products" and the value being the list of products. *@
