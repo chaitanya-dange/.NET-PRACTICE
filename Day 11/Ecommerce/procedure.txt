@@ -1,0 +1,49 @@
+Day 10  step wise procedure.....
+
+dotnet new sln
+
+ dotnet new mvc -o Estore
+
+  dotnet new classlib -o BOL
+  dotnet new classlib -o DAL
+ dotnet new classlib -o BLL
+
+ connecting BOL,DAL, BLL TO sln
+
+ dotnet sln add .\BLL\BLL.csproj
+ dotnet sln add .\BOL\BOL.csproj
+ dotnet sln add .\Estore\Estore.csproj
+
+
+ BLL  ->CatalogManager.cs               (logic for business)
+ BOL --->Product.cs                    (POCO i.e. data member, getter ,setter)
+ DAL ---> DBManager.cs                  (Data is access in these layer through  various methos.)
+
+Controller ---> (+)ProductController  --> added method action Index(), Delete(), Detail().  as action are created make view of those actions now
+
+View ---> (+) Product(folder)  --->  added Index.cshtml, Detail.cshtml, Delete.cshtml (we don't need to create coz there is no need to display deleted data)  "keep exact same name of view as action"
+
+BOL  ---> writing poco for product...
+
+in DAL --> make method(GetAllProducts) inside which make list   and add data in list.
+
+in BLL  ---> import GetAllProducts method and add reference of DAL to BLL.
+
+import Bll (GetAllProducts) in index Action method  to controller and add reference to BLL to Estore .
+
+make Index.cshtml in view->Produce-> and use foreach loop to display the data
+
+
+
+
+NOTE A :In the code you provided, the this.ViewData property is used to store a list of products in the view data dictionary.
+
+The view data dictionary is an object that allows you to pass data from a controller action to a view template.
+ It is a key-value store that is available to the view template during rendering, 
+ and can be accessed using the ViewData property of the view.
+
+In the code you provided, the ViewData property is accessed using the this keyword, 
+which refers to the current instance of the controller. 
+The ViewData property is then used to store the allProducts list in a key-value pair,
+ with the key "products" and the value being the list of products.
+
