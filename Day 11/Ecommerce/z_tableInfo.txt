@@ -1,0 +1,64 @@
+The first SQL statement creates a table named "departments" with three columns: "id", "name", and "location". 
+The "id" column is set as the primary key and is also set to auto-increment,
+which means that the value for each new row inserted into the table will be automatically incremented.
+
+The second SQL statement creates a table named "employees" with eight columns: 
+"id", "firstName", "lastName", "email", "address", "password", "deptid", and "managerid". 
+The "id" column is set as the primary key and is also set to auto-increment.
+
+The column "deptid" is a foreign key to "departments" table and references the "id" column. 
+The constraint "fk_dept" is defined on this column.
+
+Additionally, the "on update cascade" and "on delete cascade" options have been specified for the foreign key constraint.
+This means that if the referenced "id" value in the "departments" table is updated,
+the corresponding "deptid" value in the "employees" table will be automatically updated as well.
+Similarly, if a row in the "departments" table is deleted, all rows in the "employees" 
+table that reference that department will be deleted as well.
+
+_____________________________________________________________________________________________________________________________
+In this specific example, "departments" is the master table and "employees" is the dependent table.
+The "departments" table is the master table because it has a primary key that is referenced by the foreign key in the "employees" table.
+The "employees" table is the dependent table because it references the primary key of the "departments" table.
+
+You can think of the relationship between the two tables as "one-to-many", 
+where one department can have multiple employees, but each employee is associated with one specific department.
+
+_____________________________________________________________________________________________________________________________
+SQL statement creates a table named "roles" with three columns: "roleid", "rolename".
+The "roleid" column is set as the primary key and is also set to auto-increment.
+The "rolename" column also has a unique constraint, which means that the values in
+ this column must be unique across the entire table and can't be repeated.
+
+The second SQL statement creates a table named "emp_roles" with four columns:
+ "id", "empid", "roleid" . The "id" column is set as the primary key and is also set to auto-increment.
+
+The column "empid" is a foreign key to "employees" table and references the "id" column.
+ The constraint "fk_emp" is defined on this column, and it also has "on update CASCADE" defined on it.
+
+The column "roleid" is a foreign key to "roles" table and references the "roleid" column.
+ The constraint "fk_roles" is defined on this column and it also has "on update CASCADE" defined on it.
+
+Here "roles" table is master table, and "emp_roles" is dependent table.
+This creates another one to many relationship, where one employee can have multiple roles,
+ but one role can be associated with multiple employees.
+
+ _____________________________________________________________________________________________________________________________
+In this example, the relationship between the "employee" table and the "emp_roles" table is many-to-many, with the help of the "roles" table.
+
+A many-to-many relationship occurs when multiple records in one table are associated with multiple records in another table.
+In this case, a single employee can have multiple roles, and a single role can be associated with multiple employees.
+ To resolve this relationship, a third table, "emp_roles" is created to store the associations between employees and roles.
+
+The "empid" column in the "emp_roles" table references the "id" column in the "employees" table, and 
+"roleid" column in the "emp_roles" table references the "roleid" column in the "roles" table.
+
+In other words, the "emp_roles" table acts as a linking table, associating the "employee" table with
+ the "roles" table by storing the foreign keys of both the tables.
+
+So the relation between employee id and role id is maintained by "emp_roles" table, 
+using empid as foreign key referencing employee table and roleid as foreign key referencing role table,
+this creates many to many relationship between employees and roles.
+
+_____________________________________________________________________________________________________________________________
+
+

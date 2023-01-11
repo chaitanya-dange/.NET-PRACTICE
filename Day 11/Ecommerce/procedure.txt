@@ -47,3 +47,49 @@ which refers to the current instance of the controller.
 The ViewData property is then used to store the allProducts list in a key-value pair,
  with the key "products" and the value being the list of products.
 
+
+ _____________________________________________________________________________________________________________________________
+
+ Day 11(adding top on previous project)
+
+
+adding mysql file directly from sir's data.to day11 and gone to mysql created database, create all tables, inserted Query.
+
+ dotnet new console -o "TestApp"
+ 
+ dotnet sln add .\TestApp\TestApp.csproj
+
+ TestApp--> (+)DBManager.cs  (only added , empty... , for further use...)
+
+  TestApp--> (+)Department.cs---> Department class,getter setter,Methods
+
+  adding mysql.data pacakage (in this location ----->>>   Ecommerce\TestApp>)    : dotnet  add package MySql.Data  
+ 
+
+TestApp  ----> Program.cs ---> for List adding (but not added till now,empty)
+
+TestApp ----> DBTestManager.cs ---> adding GetAllDepartments() and making 
+sql collection,sql command, sql datareader and save data fetch from mysqltable to object of Department class.
+
+TestApp  ----> Program.cs  --> add list  to it.
+
+# steps have been carried out ,now its high time to basic flow .... so 
+TestApp  ----> Program.cs  --> dotnet build 
+
+
+=============================================================================================
+ERROR: \TestApp\Department.cs(1,7): error CS0246: The type or namespace name 'HR' could not be found (are you missing a using  
+directive or an assembly reference?
+
+that means using HR, and namespace HR is facing some issues
+mistake rectified---(used using HR , replace with namespace HR in Department.cs)
+=============================================================================================
+
+
+=============================================================================================
+ERROR:    D:\CHAITANYA CDAC\2.PRACTICE WORK\.NET WORK\.NET-PRACTICE\Day 11\Ecommerce\TestApp\DBTestManager.cs(4,8): error CS0246: The type or namespace name 'Mysql'  
+could not be found (are you missing a using directive or an assembly reference?) 
+=============================================================================================
+
+
+

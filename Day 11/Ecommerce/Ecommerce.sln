@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estore", "Estore\Estore.csproj", "{638C83AA-F4F4-4D7F-BCD5-5B68AFB8304B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{1154EC24-6051-4163-A8CB-8A5CAAB155D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{638C83AA-F4F4-4D7F-BCD5-5B68AFB8304B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{638C83AA-F4F4-4D7F-BCD5-5B68AFB8304B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{638C83AA-F4F4-4D7F-BCD5-5B68AFB8304B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1154EC24-6051-4163-A8CB-8A5CAAB155D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1154EC24-6051-4163-A8CB-8A5CAAB155D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1154EC24-6051-4163-A8CB-8A5CAAB155D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1154EC24-6051-4163-A8CB-8A5CAAB155D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
