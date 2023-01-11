@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "About us Page";
+}
+
+@Html.Partial("city")
+@Html.Partial("company")
+
+
+@* You can include a partial view in another view using the @Html.Partial method.
+ The @Html.Partial method takes the name of the partial view as its argument
+ , and renders the contents of the corresponding Razor file at the location in the parent view where the method is called.
+
+It's allow to Create Reusable UI, 
+that can be shared between views, you can use it to organize the HTML structure, 
+and make code more readable by dividing the UI into smaller pieces. *@

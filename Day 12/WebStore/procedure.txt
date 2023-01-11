@@ -1,0 +1,31 @@
+dotnet new sln
+dotnet new mvc -o "Unicorn"
+dotnet sln add .\Unicorn\Unicorn.csproj
+
+model --> student.cs
+Controller ---> Students() --> List of student -->
+
+dotnet build
+dotnet run
+
+=>http://localhost:5033/home/Students
+
+
+Homecontroller  --> Aboutus()
+ 
+view  --> home -->(+)Aboutus , (+)city(inserted data) ,(+)company(inserted data)
+
+making partial view of city and company in view Aboutus.
+
+
+=>http://localhost:5033/home/AboutUs
+
+_______________________________________________________________________________________
+ Controller --> (+)AuthController ---> (+)Login() method   
+ then create Login.cshtml in Auth(folder) in view with post method 
+ after clicking the page will again goes to authController login page with parameterized method.
+ where if parameter is matched then redirect to just of home controller and if not then display again same login page.
+
+ dotnet build 
+ dotnet run
+
