@@ -1,0 +1,20 @@
+
+@using BOL;
+@{
+    ViewData["Title"] = "Department  Page";
+}
+
+<div class="text-center">
+    <h1>Department Index....</h1>
+    @{
+        @* List<Department> dept=(List<Department>)ViewData["dept"]; *@
+             List<Department> dept=ViewBag.lt; 
+
+            @foreach(Department ob in dept){
+                <li>
+                    @ob.Name &nbsp;&nbsp;&nbsp;@ob.Id &nbsp; <a href="/department/delete/@ob.Id" ><input type="submit" value="Delete" /></a>
+                </li>
+            }
+    }
+    
+</div>
